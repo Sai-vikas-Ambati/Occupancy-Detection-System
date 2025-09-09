@@ -61,7 +61,7 @@ int main(void) {
 
 void GPIO_Config(void) {
     // GPIO setup code remains the same
-	 RCC->AHB1ENR |= (1 << 0);
+     RCC->AHB1ENR |= (1 << 0);
 
     // Set PA0 and PA4 as output for Trigger (Sensor1 and Sensor2)
     GPIOA->MODER |= (1 << 0) | (1 << 8);
@@ -99,7 +99,7 @@ void UART2_Config(void) {
 
 void TIM2_Config(void) {
     // TIM2 setup code remains the same
-	 RCC->APB1ENR |= (1 << 0);
+     RCC->APB1ENR |= (1 << 0);
     TIM2->PSC = 84 - 1;
     TIM2->ARR = 0xFFFFFFFF;
     TIM2->CNT = 0;
@@ -169,7 +169,3 @@ void send_message_via_bluetooth(const char *message) {
     while (!(USART2->SR & (1 << 7)));
     USART2->DR = '\n';
 }
-
-
-
-+1 -1
