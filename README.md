@@ -47,3 +47,23 @@ Firmware is written in **C for STM32F4** using register-level configuration.
 
 
 
+
+## Repository Structure
+
+Occupancy-Detection-System/
+│── README.md
+│── LICENSE
+│── docs/
+│ ├── design_overview.md
+│ ├── challenges.md
+│ └── applications.md
+│── hardware/
+│ ├── components.md
+│ └── schematic.png (optional)
+│── firmware/
+│ ├── src/
+│ │ └── main.c
+│ └── inc/
+│── simulations/
+└── .gitignore
+
